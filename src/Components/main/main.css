@@ -1,0 +1,130 @@
+main {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.definition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.definition .line {
+  max-width: 69.6875rem;
+  height: 1px;
+  flex-shrink: 0;
+}
+
+.definition h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 1.875rem;
+}
+
+.dash {
+  width: clamp(280px, 69.6875rem, 69.6875rem);
+  height: 1px;
+  background-color: #e9e9e9;
+}
+
+ul {
+  margin-bottom: 4.0625rem;
+}
+li {
+  list-style: none;
+  padding: 0 2rem 0 2rem;
+}
+li::before {
+  content: "\2022";
+  color: #8f19e8;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+  margin-right: 1.25rem;
+}
+span {
+  display: block;
+  padding: 13px 0 0 24px;
+  color: #757575;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 133.333% */
+}
+
+.meaning h3 {
+  color: #757575;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.meaning li:last-of-type {
+  margin-bottom: 3rem;
+}
+.synonyms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.synonyms h3 {
+  margin-right: 1.5625rem;
+}
+
+.synonyms p {
+  color: #a445ed;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.antonyms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.antonyms h3 {
+  margin-right: 1.5625rem;
+}
+
+.antonyms p {
+  color: #a445ed;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 34.375rem) {
+  .meaning li {
+    padding: 0 1rem 0 1rem;
+    font-size: 14px;
+  }
+  .synonyms,
+  .antonyms {
+    flex-direction: column;
+  }
+  .synonyms h3 {
+    font-size: 16px;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .synonyms p {
+    font-size: 16px;
+    flex-direction: column;
+  }
+
+  .antonyms h3 {
+    font-size: 16px;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .antonyms p {
+    font-size: 16px;
+    flex-direction: column;
+  }
+  .example {
+    font-size: 16px;
+  }
+}
